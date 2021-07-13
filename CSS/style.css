@@ -18,6 +18,65 @@ main{
     border-radius: 5px;
 
 }
+/* -----------------
+Heading section styles 
+--------------------*/
+.wrapper{
+    background-color: turquoise;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+.logo{
+    float: left;
+    margin-left: 80px;
+}
+.logo h2{
+    color: #562EFF;
+}
+.menu-button{
+    background-color:#562EFF;
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 900;
+    cursor:pointer;
+    border: 1px solid  #278be9;
+}
+.right-menu{
+    position: relative;
+    margin-right: 80px;
+
+}
+.dropdown-menu{
+    display: none;
+    position:absolute;
+    background-color: #f9F9F9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;
+
+}
+.dropdown-menu a{
+    color: black ;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-menu a:hover{
+    background-color: #7e51f0;
+    color: aqua;
+}
+.right-menu:hover .dropdown-menu{
+    display: block;
+}
+.right-menu:hover .menu-button{
+    background-color: transparent;
+}
+
 
 /* top players style  */
 .top-players{
